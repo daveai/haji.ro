@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajiro</title>
+    <style>
+        body {
+            background-color: #ded6c2;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures the footer stays at the bottom */
+            align-items: center;
+            font-size: 48px;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            text-align: center; /* Ensures content alignment */
+            width: 100%; /* Full width to manage centering */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align all items in the content */
+        }
+        img {
+            max-width: 100%; /* Ensures the image is not larger than its container */
+            height: auto; /* Maintains the aspect ratio */
+            width: 30%; /* Adjust this value to your preference for the logo size */
+            margin-bottom: 0; /* Remove spacing below the image */
+        }
+        p {
+            margin: 0; /* Remove default margin */
+            text-align: center; /* Center align text */
+        }
+        .announcement {
+            font-size: 24px; /* Smaller font size for the announcement */
+            color: #555; /* Slightly lighter text color */
+            padding: 20px; /* Padding around the text */
+        }
+        footer {
+            font-size: 20px; /* Smaller font size for footer */
+            color: #333; /* Footer text color */
+            text-align: center; /* Center the footer text */
+            width: 100%;
+            padding: 10px 0 15px 0; /* Padding for aesthetic spacing */
+        }
+        footer a {
+            color: #333; /* Match the text color of the footer */
+            text-decoration: none; /* No underline */
+        }
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover for better user experience */
+        }
+        @media (max-width: 600px) {
+            img {
+                width: 50%; /* Larger percentage for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="hajiro.png" alt="Logo">
+        <p>羽白</p>
+        <p class="announcement">Liquid staking for Koii Network. Coming soon...</p>
+    </div>
+    <footer>
+        &copy; Made by <a href="https://nedo.fm" target="_blank">nedo.fm</a>
+    </footer>
+</body>
+</html>
